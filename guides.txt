@@ -1,0 +1,3 @@
+vim treats alt key as escape key 
+so to map alt-m use <Esc>m 
+code for Esc is ^[ and in termux alt is treated as escape
