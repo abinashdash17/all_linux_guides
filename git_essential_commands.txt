@@ -1,0 +1,7 @@
+echo "# all_linux_guides" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/abinashdash17/all_linux_guides.git
+git push -u origin master
+
