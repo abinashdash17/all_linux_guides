@@ -1,0 +1,77 @@
+after installing from mini.iso
+no internet connection
+no wpa_supplicant
+no iwlist
+no dhcpcd
+dhclient not working properly
+so chrooted into ubuntu from arch and installed 
+connman , dhcpcd5 
+exited chroot
+booted into ubuntu and instlled 
+vim
+
+xorg 
+ i3 
+pulseaudio i3blocks compton
+exec i3 into .xinitrc
+xfce4-terminal
+pcmanfm arc-theme lxappearance gtk-chtheme chromium-browser arandr gvfs-backends gnome-disk-utility xarchiver smplayer
+libreoffice nitrogen scrot
+rfkill
+xfonts-terminus
+git
+ristretto gimp
+libpulse-dev
+libboost-program-options-dev
+and then install pamixer
+lxdm(it installs hell lot of unnecessary packages)
+disabled dhcpcd and bluetooth
+surf
+st from source
+patch -Np1 -i st-alpha-0.8.2.diff
+zsh
+amd64-microcode audacious
+use connman_dmenu git works great (just use the NOPASSWD in sudoer file)
+edit /etc/apt/source.list and remove in. from every url for faster download
+
+run a program without password
+Backup your /etc/sudoers file by typing the following command:
+sudo cp /etc/sudoers /root/sudoers.bak
+Edit the /etc/sudoers file by typing the visudo command:
+sudo visudo
+Append/edit the line as follows in the /etc/sudoers file for user named ‘vivek’ to run ‘/bin/kill’ and ‘systemctl’ commands:
+vivek ALL = NOPASSWD: /bin/systemctl restart httpd.service, /bin/kill
+Save and exit the file.
+
+!!remember to put the no passwd line after the sudo line otherwise the sudo line configuration will override this behaviour. (https://askubuntu.com/questions/100051/why-is-sudoers-nopasswd-option-not-working)  testing ...
+
+exit dmenu without pressing escape
+install xdotool
+xdotool key "Escape"
+add this to command of any block in i3block
+this is better than finding a process matching dmenu and kill it on click
+install xpad note taking app
+uck uninstalled it (not useful  for editing mini.iso)
+
+stterm vim comments hard to read:
+use "set background=dark" in ~/.vim/vimrc file and add the following lines too in order to get default vim behaviours like syntax high lightings...
+"        unlet! skip_defaults_vim
+        source $VIMRUNTIME/defaults.vim"
+
+install tmux
+emacs
+
+to edit the command in vi press C-x and then e the EDITOR environment variable must be set
+onboard
+kazam zip
+flowblade
+opera
+chromium is using too much RAM then some applications are lagging
+connman-ui connman-gtk(removed)
+tint2(removed)
+cmst
+transmission
+changed swappiness to 10
+added xset r rate 750 40 to change altency in i3
+install atom by adding apt repo to sources.list.d or something
+sudo apt-mark hold love
