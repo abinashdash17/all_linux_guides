@@ -114,3 +114,6 @@ git remote show origin
 You can change the URL with:
 
 git remote set-url origin git+ssh://git@github.com/username/reponame.git
+downloaded youtube-dl
+aria2
+redshift
