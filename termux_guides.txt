@@ -8,3 +8,5 @@ $ git push http://example.com/repo.git
 install current activity app from playstore ot shows the current app name
 after getting name use the following command to run love2d from termux
 am start --user 0 -n org.love2d.android/org.love2d.android.GameActivity
+
+use ctrl + alt + n or p to switch between session
