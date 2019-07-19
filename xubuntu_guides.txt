@@ -1,0 +1,52 @@
+remove these packages:
+thunderbird
+pidgin
+blueman
+pulseaudio
+install these packages:
+vim
+gnome-alsamixer
+qasmixer
+git
+libxft-dev
+libx11-dev
+
+I don't understand how this xubuntu is working so swiftly. No lag... whats happening. may be after some software installtion or update it will start lagging. let's test.
+
+changes made:
+moved xterm to xterm.bak
+softlink xterm to xfce4-terminal.wrapper
+so that vim opens in xfce4-terminal by default-->> working fine
+redshift
+added the following:
+/etc/pulse/default.pa
+
+load-module module-udev-detect tsched=0
+
+alsa guide:
+Setting the default device
+Jump to: navigation, search
+
+Find your desired card with:
+
+   cat /proc/asound/cards
+
+and then create /etc/asound.conf with following:
+
+   defaults.pcm.card 1
+   defaults.ctl.card 1
+
+Replace "1" with number of your card determined above.
+
+reinstalled pulseaudio cause I can't get alsa to work
+It' didn't fix the problem of occasional lag.
+tried to debug the problem with 'top'
+it seems wpa_supplicant periodic scanning is causing the issue. I could rememberubuntu with openbox didn't have this problem(I used wicd back then). arch also didn't have this problem because I used netctl which didn't do periodic scans. Looks like others also hav ethe sam problem(https://ubuntuforums.org/showthread.php?t=2163994). Findind a way to fix this.
+disable wifi from nm menu(that simple?) testing...
+no lag till now... may be the problem is fixed..
+[links]
+https://www.hecticgeek.com/2012/01/how-to-remove-pulseaudio-use-alsa-ubuntu-linux/
+
+curl installation for brave installation
+installed dmenu
+hide.me vpn for brave
