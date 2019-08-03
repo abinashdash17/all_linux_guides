@@ -106,3 +106,11 @@ gimp
 surf
 kazam
 lxappearance
+
+
+use grep to search using regex pattern
+use tr remove trailing newline from grep output
+
+installed exfat-fuse exfat-utils for exfat support
+installed printer-driver-cups-pdf for printing to pdf from matlab
+
