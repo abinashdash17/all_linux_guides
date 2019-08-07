@@ -5,6 +5,7 @@ blueman
 pulseaudio
 install these packages:
 vim
+vlc
 gnome-alsamixer
 qasmixer
 git
@@ -47,6 +48,69 @@ no lag till now... may be the problem is fixed..
 [links]
 https://www.hecticgeek.com/2012/01/how-to-remove-pulseaudio-use-alsa-ubuntu-linux/
 
+[how to paste systemcommand output in vim]
+:let @a=system("ls -l") will put the output of ls -l into register a. You can then paste it (in insert mode) with ^R-a
+
+
 curl installation for brave installation
 installed dmenu
 hide.me vpn for brave
+zsh tmux
+installed gparted
+libxinerama-dev for dwm installation
+added systraypatch in dwm then run make
+copy dwm to /usr/local/bin
+create a desktop file in /usr/share/xsessions/ with name dwm.desktop and content
+[Desktop Entry]
+Name=Xsession
+Exec=/etc/X11/Xsession
+
+then added "exec dwm" line to ~/.xinitrc
+
+then replaced the /etc/X11/Xsession with dwm
+installed compton
+installed automake to compile pa-applet
+libglib2.0-dev libgtk-3-dev libpulse-dev libnotify-dev
+then installed pa-applet
+removed pa-applet and removed all dependencies (pasystray is much easier to install)
+pasystray needs MMB to mute I don't like it.removed it. in search of other alternative
+installed and removed ubuntu-unity-desktop
+removed thunderbird shotwell
+don't ever try to install and remove new de in ubuntu. the dependency problem is very bad...
+made a big mistake installing unity , audio not workign anymore even after reinstalling pulseaudio. now reinstalling xubuntu out of compulsion . otherwise system was working super awesome
+
+download these movies gemini man
+spies in disguise
+shaft
+21 bridges
+daughter of the wolf
+sicario
+rampage
+tripple threat 
+trading paint
+
+
+Things I did after xubuntu reinstallation:
+first updated the softwares
+moved panel to bottom
+changed date time format
+changed theme to default in window manager settings
+changed row size to 28
+"sudo systemctl disable bluetooth"
+changed prefered application>terminal emulator to "st %s"
+formatted 28 gb drive to ntfs
+python3-pip incomplete
+ python3 -m pip install -U pygame --user
+rofi
+gimp
+surf
+kazam
+lxappearance
+
+
+use grep to search using regex pattern
+use tr remove trailing newline from grep output
+
+installed exfat-fuse exfat-utils for exfat support
+installed printer-driver-cups-pdf for printing to pdf from matlab
+
