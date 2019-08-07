@@ -10,3 +10,7 @@ after getting name use the following command to run love2d from termux
 am start --user 0 -n org.love2d.android/org.love2d.android.GameActivity
 
 use ctrl + alt + n or p to switch between session
+
+
+use pacman -Sc to remove unused package cache
+use pacman -Scc to remove all package cache
