@@ -15,3 +15,9 @@ use ctrl + alt + n or p to switch between session
 use pacman -Sc to remove unused package cache
 use pacman -Scc to remove all package cache
 installed numpy,scipy,matplotlib in arch termux
+file sharing over tmate
+use tmate to share terminal using ssh
+as tmate is only terminal sharing,scp can't be used . To share file, use "transfer.sh" service.
+1.connect using tmate
+2.use 'curl --upload-file ./test.txt https://transfer.sh/test.txt' to upload
+3. use the output of this link to download the file in local machine. 'curl output_link -o [filename]'
